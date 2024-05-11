@@ -1,6 +1,6 @@
 # VSD SoC design Program
 # Contents
-1) Day-1: [Inception of open-source EDA, OpenLANE and Sky130 PDK](https://github.com/katapavanteja/nasscom-vsd-soc-design-program/blob/main/README.md#inception-of-open-source-eda-openlane-and-sky130-pdk)
+1) Day-1: [Inception of open-source EDA, OpenLANE and Sky130 PDK](https://github.com/chetp100/VSDSOC/edit/main/README.md#inception-of-open-source-eda-openlane-and-sky130-pdk)
     - [How to talk to computers](https://github.com/katapavanteja/nasscom-vsd-soc-design-program/blob/main/README.md#how-to-talk-to-computers)
        - [Introduction to QFN-48 Package, chip, pads, core, die and IPs](https://github.com/katapavanteja/nasscom-vsd-soc-design-program/blob/main/README.md#introduction-to-qfn-48-package-chip-pads-core-die-and-ips)
        - [Introduction to RISC-V](https://github.com/katapavanteja/nasscom-vsd-soc-design-program/blob/main/README.md#introduction-to-risc-v)
