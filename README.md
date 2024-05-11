@@ -15,6 +15,4 @@
 ##  How to talk to computers
 ###   Introduction to QFN-48 Package, chip, pads, core, die and IPs
 
-**Aurdino Board**: The image below is an Aurdino Microcontroller Board. Here we focus more on the encircled area, which contains the 'Microprocessor',that we will be designing from abstract level till fabrication level by using RTL to GDS flow
 
-![Hanuman](https://github.com/chetp100/VSDSOC/assets/169384940/fafe8d24-c170-455b-ad9c-d6d145e0a6f5)
