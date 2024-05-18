@@ -117,6 +117,30 @@ magic -T /home/vsdsquadron/Desktop/work/tools/openlane_working_dir/pdks/sky130A/
   read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 
 ```
+<br>
+![13](https://github.com/chetp100/VSDSOC/assets/169384940/c894dfb0-8fd1-44e3-924f-eb3b42c97b09)
+<br>
+The Magic Layout appears . To zoom it the steps are 
+<br>
+Left Click--- Right Click --- Z
+<br>
+![18](https://github.com/chetp100/VSDSOC/assets/169384940/41ffea54-ec1a-4e00-be15-de5ec1197e87)
+<br>
+To view the Horizontal and Vertical pins zoom in.
+<br>
+![20](https://github.com/chetp100/VSDSOC/assets/169384940/db854fa5-0dc9-4d1b-ad72-d5b6968f47c7)
+<br>
+![22](https://github.com/chetp100/VSDSOC/assets/169384940/e66983d4-b6fb-47ed-8cc8-7ce81301f86a)
+<br>
+
+To know more about the pins click on them and type **What**  in the tcon.tcl window
+<br>
+![21](https://github.com/chetp100/VSDSOC/assets/169384940/95739e18-b7bd-4110-8dcc-fd793e1bc8bb)
+
+
+
+
+
 
 
 
