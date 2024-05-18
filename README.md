@@ -12,6 +12,13 @@ Die - It is the size of the entire chip.
 the Example given to us for our learning was RISC-V.
 # Lab 01
 Directory of OPENLANE:
+![1 image](https://github.com/chetp100/VSDSOC/assets/169384940/f30a048d-04ca-4c19-bbeb-b4b65be5582e)
+The directory to get into the openlane is as follows:
+cd Desktop/work/tools/openlane_working_dir/openlane
+Then enter into docker file
+For beginning the session enter as ./flow.tcl -interactive
+
+
 
 
 
