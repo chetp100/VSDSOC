@@ -20,9 +20,16 @@ Then enter into docker file
 <br>
 For beginning the session enter as ./flow.tcl -interactive
 <br>
-The next stage is Design Preparation stage
+**The next stage is Design Preparation stage**
 <br>
-Let us first enter our 
+Let us first enter our Desired package 
+<br>
+The command is % package require openlane 0.9
+<br>
+For preparation the command is prep -design picorv32a
+<br>
+![image 2](https://github.com/chetp100/VSDSOC/assets/169384940/4232d60d-4000-45fa-8a3b-121d67b110c7)
+
 
 
 
