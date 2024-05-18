@@ -97,7 +97,12 @@ After complete Floorplan The line *PND generation Successfull* appears.
 <br>
 ![10](https://github.com/chetp100/VSDSOC/assets/169384940/f942d386-4c77-4d55-a14b-4ad55411cdcb)
 <br>
+Its time to view the VMetal nd HMetal (Vertical and Horizontal Metals). The number will be one more than the actual configuratuion.  View in configure.tcl file.
+<br>
 
+...
+diff
+...
 
 
 
