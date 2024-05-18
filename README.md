@@ -78,7 +78,28 @@ The Utlisation factor is defined as the total area of Netlist to the Area of the
 <br>
 
 ### ASPECT RATIO
-It is defined as the ratio of the height and width of the 
+It is defined as the ratio of the height and width of the element box.
+<br>
+
+### FLOOR PLANNING
+The arrangement of the Intellectual Properties (IP's) in a chip is reffered as Floor Planning. These are called as pre-placed cells because these are placed in a chip before automated placement and routing is done.
+<br>
+These are implemented once, used multiple times.
+<br>
+
+### The Steps to run Floorplan in OpenLane
+
+The command that need to be typed is *run_floorplan*
+<br>
+![9](https://github.com/chetp100/VSDSOC/assets/169384940/2b8b2e4b-e30b-4698-93c2-f16254913d25)
+<br>
+After complete Floorplan The line *PND generation Successfull* appears.
+<br>
+![10](https://github.com/chetp100/VSDSOC/assets/169384940/f942d386-4c77-4d55-a14b-4ad55411cdcb)
+<br>
+
+
+
 
 
 
