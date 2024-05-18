@@ -109,6 +109,16 @@ Then the ioplacer folder opens. We can find the total area of the die and the un
 ![13](https://github.com/chetp100/VSDSOC/assets/169384940/081d64fc-ad1e-4004-ac5d-e518b2cd27a6)
 <br>
 We can observe that the dimension of the die is 660685 x 671405. The unit distance micron is 1000.
+<br>
+To visualize the floorplanning in the layout we need to open via Magic. The path to go to the magic is 
+<br>
+```
+magic -T /home/vsdsquadron/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef 
+  read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+```
+
+
 
 
 
