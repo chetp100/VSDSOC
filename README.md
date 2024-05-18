@@ -67,6 +67,7 @@ Here we can see No.of flipflops as 1613
 Total No.of cells is 14876
 <br>
 Flip Flop Ratio is 1613/14876 = 0.1084
+
 <br>
 
 ## **DAY 2**
@@ -74,6 +75,10 @@ Flip Flop Ratio is 1613/14876 = 0.1084
 ### UTILISATION FACTOR
 <br>
 The Utlisation factor is defined as the total area of Netlist to the Area of the Core.
+<br>
+
+### ASPECT RATIO
+It is defined as the ratio of the height and width of the 
 
 
 
