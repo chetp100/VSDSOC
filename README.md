@@ -141,6 +141,50 @@ To know more about the pins click on them and type **What**  in the tcon.tcl win
 <br>
 
 ![21](https://github.com/chetp100/VSDSOC/assets/169384940/95739e18-b7bd-4110-8dcc-fd793e1bc8bb)
+<br>
+
+### PLACEMENT
+
+Placement is a very important stage of physical design where all the standard cells get placed inside the core boundary.
+
+<br>
+
+To run the placement in Openlane
+```
+run_placement
+
+```
+![23](https://github.com/chetp100/VSDSOC/assets/169384940/ac3cee96-52ee-409a-817d-e882b51a1999)
+
+<br>
+
+ The Utilization area and Total Area for Utilization in core can be seen.
+ <br>
+ 
+ ![24](https://github.com/chetp100/VSDSOC/assets/169384940/fb7b1788-7dd9-4080-95af-f2de909aee9b)
+<br>
+
+To view the Layout of Placement in magic go to
+
+```
+magic -T /home/vsdsquadron/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef 
+  read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+![25](https://github.com/chetp100/VSDSOC/assets/169384940/c762aa83-587d-46aa-bf37-aca80920921d)
+<br>
+
+Zoom it to see the placed blocks.
+<br>
+
+![27](https://github.com/chetp100/VSDSOC/assets/169384940/d502cccc-d3b9-4b30-80fc-cd6349254e52)
+
+
+
+
+
+
+
 
 
 
