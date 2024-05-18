@@ -19,6 +19,10 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 Then enter into docker file
 <br>
 For beginning the session enter as ./flow.tcl -interactive
+<br>
+The next stage is Design Preparation stage
+<br>
+Let us first enter our 
 
 
 
