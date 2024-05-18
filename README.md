@@ -29,6 +29,26 @@ The command is % package require openlane 0.9
 For preparation the command is prep -design picorv32a
 <br>
 ![image 2](https://github.com/chetp100/VSDSOC/assets/169384940/4232d60d-4000-45fa-8a3b-121d67b110c7)
+<br>
+Ones the Complete preparation is done then lets now find the run file in the picorv32a .
+<br>
+![image 3](https://github.com/chetp100/VSDSOC/assets/169384940/9f7b9283-f610-4c73-adfe-9fb9451ec0b8)
+<br>
+We can see the date at which we have recently finished our design prepartion step.
+<br>
+![4 image](https://github.com/chetp100/VSDSOC/assets/169384940/0e278870-17df-4ec3-9795-d60d9105ac0e)
+<br>
+A temporary folder will be created in the recent date of design preparation step. It is named as tmp file. We can see many sub folders created in tmp file.
+<br>
+![5 image](https://github.com/chetp100/VSDSOC/assets/169384940/7a713311-fc25-474e-89d0-7ac2b2cc1826)
+<br>
+The folders in tmp file are as shown:
+<br>
+![image 6](https://github.com/chetp100/VSDSOC/assets/169384940/f778eca9-979a-455c-835b-2119af1352ad)
+
+
+
+
 
 
 
