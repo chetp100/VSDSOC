@@ -100,7 +100,17 @@ After complete Floorplan The line *PND generation Successfull* appears.
 Its time to view the VMetal nd HMetal (Vertical and Horizontal Metals). The number will be one more than the actual configuratuion.  View in configure.tcl file.
 ![12](https://github.com/chetp100/VSDSOC/assets/169384940/f7fa5a22-e9df-4518-b1a9-86cec3edac09)
 <br>
-to view the die area we have to go to the 
+to view the die area we have to go to the ioplacer in floorplan.
+<br>
+![14](https://github.com/chetp100/VSDSOC/assets/169384940/e954adb9-22db-4db1-bb96-1a07819e8cde)
+<br>
+Then the ioplacer folder opens. We can find the total area of the die and the unit distance.
+<br>
+![13](https://github.com/chetp100/VSDSOC/assets/169384940/081d64fc-ad1e-4004-ac5d-e518b2cd27a6)
+<br>
+We can observe that the dimension of the die is 660685 x 671405. The unit distance micron is 1000.
+
+
 
 
 
