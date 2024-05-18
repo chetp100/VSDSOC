@@ -69,6 +69,14 @@ Total No.of cells is 14876
 Flip Flop Ratio is 1613/14876 = 0.1084
 <br>
 
+## **DAY 2**
+## FLOOR PLANNING 
+### UTILISATION FACTOR
+<br>
+The Utlisation factor is defined as the total area of Netlist to the Area of the Core.
+
+
+
 
 
 
