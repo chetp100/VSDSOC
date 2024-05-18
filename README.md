@@ -15,7 +15,9 @@ Directory of OPENLANE:
 ![1 image](https://github.com/chetp100/VSDSOC/assets/169384940/f30a048d-04ca-4c19-bbeb-b4b65be5582e)
 The directory to get into the openlane is as follows:
 cd Desktop/work/tools/openlane_working_dir/openlane
+<br>
 Then enter into docker file
+<br>
 For beginning the session enter as ./flow.tcl -interactive
 
 
