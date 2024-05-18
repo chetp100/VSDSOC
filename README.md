@@ -45,6 +45,33 @@ A temporary folder will be created in the recent date of design preparation step
 The folders in tmp file are as shown:
 <br>
 ![image 6](https://github.com/chetp100/VSDSOC/assets/169384940/f778eca9-979a-455c-835b-2119af1352ad)
+<br>
+#Synthesis#
+<br>
+To Synthesis the design the command is run_synthesis
+<br>
+![image 7](https://github.com/chetp100/VSDSOC/assets/169384940/dbc6991c-7f2e-412c-8769-1f06e0839ec3)
+<br>
+Then complete synthesis process takes place then the synthesis complete appears on the screen.
+<br>
+![image 8](https://github.com/chetp100/VSDSOC/assets/169384940/58d2d9ed-0828-4227-8868-3a0bd9a1af41)
+<br>
+**Utilisation Factor**
+<br>
+The flip flop ratio is defined as the number of flip flops divided by the total number of cells
+<br>
+![image 8 g](https://github.com/chetp100/VSDSOC/assets/169384940/e6181776-cc66-455a-b21c-caa846cb667e)
+<br>
+Here we can see No.of flipflops as 1613
+<br>
+Total No.of cells is 14876
+<br>
+Flip Flop Ratio is 1613/14876 = 0.1084
+<br>
+
+
+
+
 
 
 
