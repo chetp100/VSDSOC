@@ -178,6 +178,30 @@ Zoom it to see the placed blocks.
 <br>
 
 ![27](https://github.com/chetp100/VSDSOC/assets/169384940/d502cccc-d3b9-4b30-80fc-cd6349254e52)
+<br>
+
+# DAY 03
+
+## DESIGN AND SIMULATION USING MAGIC LAYOUT AND NGSPICE SIMULATION
+
+### CMOS INVERTER
+
+An inverter is a device which inverts the given input and provide the output. Here, we are learning about Inverter using CMOS Technology. The design consists of nfet and pfet transistors. The input is connected to the gates of the transitor and the output is collected from the drains of the tranistor.
+
+### To Gitclone the inverter file
+
+![32](https://github.com/chetp100/VSDSOC/assets/169384940/e4d4e69c-826d-4cdf-aed2-1b43d4ce1769)
+
+<br>
+We can now see the Inverter file.
+<br>
+
+![33](https://github.com/chetp100/VSDSOC/assets/169384940/b1b12f03-14ad-4937-9f19-0696dbcc6722)
+
+
+
+
+
 
 
 
