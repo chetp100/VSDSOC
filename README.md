@@ -193,10 +193,22 @@ An inverter is a device which inverts the given input and provide the output. He
 ![32](https://github.com/chetp100/VSDSOC/assets/169384940/e4d4e69c-826d-4cdf-aed2-1b43d4ce1769)
 
 <br>
-We can now see the Inverter file.
+We can now see the Inverter magic file. Now, we will open the magic file using the previous commans to open magic layout.
 <br>
 
 ![33](https://github.com/chetp100/VSDSOC/assets/169384940/b1b12f03-14ad-4937-9f19-0696dbcc6722)
+<br>
+
+The inverter magic layout file opens.
+<br>
+
+![34](https://github.com/chetp100/VSDSOC/assets/169384940/d446688f-a529-438a-9437-987150585314)
+
+To know more about the elements in the layout, keep the cursor on the required element and then type 'what' in the top.tcl file. It provides the information of that element.
+
+![35](https://github.com/chetp100/VSDSOC/assets/169384940/adbf0fa0-5a71-4b52-9908-16468ec21876)
+
+
 
 
 
