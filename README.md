@@ -221,6 +221,41 @@ For creation of spice file
 ext2spice cthresh 0 rthresh
 
 ```
+![38](https://github.com/chetp100/VSDSOC/assets/169384940/bd78f13c-635a-4756-b947-80bf653fdbf3)
+
+Once the extraction is finished , we get the extracted file in the vsdstdcelldesign folder. Then the extraction command appears.
+<br>
+![39](https://github.com/chetp100/VSDSOC/assets/169384940/50aff627-1640-4b23-8158-0da2ca036eed)
+
+<br>
+To open ngspice, type as follows.
+
+![ng2](https://github.com/chetp100/VSDSOC/assets/169384940/bffcea1b-8d79-44d4-8911-48557181e675)
+
+
+The spice file is generated.
+
+![40](https://github.com/chetp100/VSDSOC/assets/169384940/4f57fafe-a7a5-420f-809a-0b0dcd0d6c18)
+
+Now we need to change the values of the scales and also we should add pmos and nmos libraries.
+<br>
+The rise time 0.1ns and fall time 2ns of the pulses are added.
+![ngspice file](https://github.com/chetp100/VSDSOC/assets/169384940/053d4290-2a5b-4b08-a979-dbfb264a3a8e)
+
+Then the transient analysis is performed.
+
+![ngspice waveform](https://github.com/chetp100/VSDSOC/assets/169384940/88ce9a3e-595e-4711-b4e6-1f76661da882)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
