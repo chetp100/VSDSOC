@@ -207,6 +207,21 @@ The inverter magic layout file opens.
 To know more about the elements in the layout, keep the cursor on the required element and then type 'what' in the top.tcl file. It provides the information of that element.
 
 ![35](https://github.com/chetp100/VSDSOC/assets/169384940/adbf0fa0-5a71-4b52-9908-16468ec21876)
+<br>
+
+### Extraction of the file and creation of the spice file
+
+For extraction 
+```
+extract all
+
+```
+For creation of spice file 
+```
+ext2spice cthresh 0 rthresh
+
+```
+
 
 
 
