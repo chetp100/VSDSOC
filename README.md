@@ -245,6 +245,34 @@ The rise time 0.1ns and fall time 2ns of the pulses are added.
 Then the transient analysis is performed.
 
 ![ngspice waveform](https://github.com/chetp100/VSDSOC/assets/169384940/88ce9a3e-595e-4711-b4e6-1f76661da882)
+<br>
+# DAY 04
+
+PRE-LAYOUT TIMING AND CLOCK TREE SYNTHESIS
+
+Creating lef file
+
+![43](https://github.com/chetp100/VSDSOC/assets/169384940/e50b15ef-2a92-410c-85a5-a097229a07c4)
+<br>
+
+The file is now available in the picorv32a folder
+
+![44](https://github.com/chetp100/VSDSOC/assets/169384940/5db4b136-893d-4720-9f63-0fffe998e0af)
+
+lef file appears
+
+![45](https://github.com/chetp100/VSDSOC/assets/169384940/266012bd-cd0c-4a2f-943c-f617e2b3d152)
+
+copy this lef file in the src file
+
+
+
+
+
+
+
+
+
 
 
 
