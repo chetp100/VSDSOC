@@ -388,7 +388,154 @@ timing is checked
 
 report_checks -fields {net cap slew input_pins} -digits 4
 
+
 ```
+![VirtualBox_vsdworkshop_21_05_2024_23_06_02](https://github.com/chetp100/VSDSOC/assets/169384940/bcef25cc-5754-4f30-9705-3807d5b3a2dc)
+
+We can see the reduction in slack value
+
+## Clock tree synthesis TritonCTS and signal integrity
+
+To create synthesis file
+
+```
+write verilog  /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis.v
+
+```
+Run the preparation,floorplan and placement again.
+
+```
+prep -design picorv32a -tag 05-05_10-43 -overwrite
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+set ::env(SYNTH_SIZING) 1
+
+run_synthesis
+
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+run_placement
+
+```
+now to run the clock tree synthesis
+
+```
+run_cts
+
+```
+
+![78](https://github.com/chetp100/VSDSOC/assets/169384940/9ba05277-b3bb-489c-bb14-7b7a26e9391d)
+
+## Post-CTS OpenROAD timing analysis
+
+Using Openroad command
+
+
+```
+openroad
+
+read_lef /openLANE_flow/designs/picorv32a/runs/05-05_10-43/tmp/merged.lef
+
+read_def /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/cts/picorv32a.cts.def
+
+write_db pico_cts.db
+
+read_db pico_cts.db
+
+read_verilog /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis_cts.v
+
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+
+link_design picorv32a
+
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+set_propagated_clock [all_clocks]
+
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+exit
+
+```
+![80](https://github.com/chetp100/VSDSOC/assets/169384940/21443951-6d92-4a3a-af69-6b43c5e504fd)
+
+![82](https://github.com/chetp100/VSDSOC/assets/169384940/2bf1aa52-687d-40f7-8f7f-1bd42f84fdb6)
+
+![84](https://github.com/chetp100/VSDSOC/assets/169384940/4cdf5538-d1f7-431c-961f-9457d69fbd32)
+
+Lab assignment
+
+to replace bigger CTS buffers
+
+commands:
+
+```
+
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/placement/picorv32a.placement.def
+
+run_cts
+
+```
+![85](https://github.com/chetp100/VSDSOC/assets/169384940/39b2d13c-f2d9-450e-aa10-ca0c12d1b279)
+
+# LAB 05
+
+##  RTL2GDS using tritinRoute and openSTA
+
+First generate PDN file
+```
+gen_pdn
+
+```
+
+then using magic file command in tmp/floorplan folder run it to see the floorplanning
+
+![VirtualBox_vsdworkshop_21_05_2024_23_29_12](https://github.com/chetp100/VSDSOC/assets/169384940/6607ef0a-bef0-4dd4-a252-2f321acb3851)
+
+![Screenshot (49)](https://github.com/chetp100/VSDSOC/assets/169384940/35796178-4095-4865-971c-0af427972dd1)
+
+![Screenshot (50)](https://github.com/chetp100/VSDSOC/assets/169384940/38f5a987-9870-43ed-b089-8f51ead5a3dc)
+
+
+
+Final step is Routing
+
+```
+run_routing
+
+```
+
+using magic file in result/routing of runs folder we can see routing
+
+![Screenshot (51)](https://github.com/chetp100/VSDSOC/assets/169384940/25aa3ff4-cf10-4eff-948c-49b83815991d)
+
+![Screenshot (52)](https://github.com/chetp100/VSDSOC/assets/169384940/31efaf3e-b800-444e-8aa3-27ba389ce8d0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
