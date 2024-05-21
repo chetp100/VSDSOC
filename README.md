@@ -245,7 +245,45 @@ The rise time 0.1ns and fall time 2ns of the pulses are added.
 Then the transient analysis is performed.
 
 ![ngspice waveform](https://github.com/chetp100/VSDSOC/assets/169384940/88ce9a3e-595e-4711-b4e6-1f76661da882)
+
+Rise time is measured from 20% to 80% of the value.
+VDD + 3.3V
+20% of is 3.3V is 660mV
+80% of 3.3V is 2.64V
+
+To run DRC tests
+
+![drc_test](https://github.com/chetp100/VSDSOC/assets/169384940/5cc50abb-ac2c-4cbf-b927-9a67dabe189e)
+
+to see load error
+
+![LOAD ERROR](https://github.com/chetp100/VSDSOC/assets/169384940/52b36e65-1b22-4ca8-9e58-501975d387e4)
+
+to load poly layer
+
+![POLY LAYER](https://github.com/chetp100/VSDSOC/assets/169384940/e5c91ebe-af0e-4901-b258-b37ce11271ce)
+
+to check drc copies.. to create copies and move it
+
+![drc chexk cpy](https://github.com/chetp100/VSDSOC/assets/169384940/81d36144-0c36-43d6-a358-c0279e66e377)
+
+To check via between metals
+
+![via metAL](https://github.com/chetp100/VSDSOC/assets/169384940/fbaec0c7-a219-40e4-a583-dfd699b1cbeb)
+
+To find distance between via
+
+![DISTANCE BETWEEN VIA](https://github.com/chetp100/VSDSOC/assets/169384940/8d054387-6f69-4cbf-b39b-dec26031b5d9)
+
+
+
+
+
+
+
 <br>
+
+
 # DAY 04
 
 PRE-LAYOUT TIMING AND CLOCK TREE SYNTHESIS
