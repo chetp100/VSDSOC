@@ -265,6 +265,54 @@ lef file appears
 
 copy this lef file in the src file
 
+![46](https://github.com/chetp100/VSDSOC/assets/169384940/f659fa3d-d064-48ef-ba5b-0fe1854c79e6)
+
+it is now available in the src file. it can be checked in src file
+
+![47](https://github.com/chetp100/VSDSOC/assets/169384940/880f517c-037e-4d38-b1ed-b5ae9d36f426)
+
+Next we have to export all lib files to the scr file
+
+![49](https://github.com/chetp100/VSDSOC/assets/169384940/c9795bd3-39cd-4370-9095-45f610bc7051)
+
+Now, again we have to do 
+<br>
+Preparation
+<br>
+run_synthesis
+<br>
+init_floorplan
+<br>
+place_io
+<br>
+tap_decap_or
+<br>
+run_placement
+<br>
+![51](https://github.com/chetp100/VSDSOC/assets/169384940/d2ade415-4b4a-4264-98e4-37bf1374786a)
+
+![54](https://github.com/chetp100/VSDSOC/assets/169384940/6a2c896d-290a-4ce2-b897-b3371f91be72)
+
+![55](https://github.com/chetp100/VSDSOC/assets/169384940/755bf859-8890-46ef-a2d4-bdf638d1ea99)
+
+![59](https://github.com/chetp100/VSDSOC/assets/169384940/13e2dd2c-8958-4b4d-a51c-0cda89418562)
+
+![61](https://github.com/chetp100/VSDSOC/assets/169384940/fa7d2aac-4998-4e4d-958d-8724799d02d5)
+
+![62](https://github.com/chetp100/VSDSOC/assets/169384940/7538247a-e512-48d4-911d-f468b75f7c35)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
