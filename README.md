@@ -330,22 +330,16 @@ Run Synthesis function need to be performed.
 
 ```
 ./flow.tcl -interactive
-<br>
 
 package require openlane 0.9
-<br>
 
 prep -design picorv32a
-<br>
 
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-<br>
 
 add_lefs -src $lefs
-<br>
 
 set ::env(SYNTH_SIZING) 1
-<br>
 
 run_synthesis
 
