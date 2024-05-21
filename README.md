@@ -301,6 +301,32 @@ run_placement
 
 ![62](https://github.com/chetp100/VSDSOC/assets/169384940/7538247a-e512-48d4-911d-f468b75f7c35)
 
+## Configuration in Synthesis window to selesct slack and also adding vsdinv file
+
+![70](https://github.com/chetp100/VSDSOC/assets/169384940/a7879e41-b423-40c0-a0ce-85aa3c5c55ce)
+<br>
+wns= -23.89 tns== -711.59
+<br>
+init_floorplan
+<br>
+place_io
+<br>
+tap_decap_or
+<br>
+run_placement
+<br>
+
+Now using Magic file, observe the placement and floorplan.
+
+![68](https://github.com/chetp100/VSDSOC/assets/169384940/b22be279-b94e-4f52-aba0-6184c5bcde46)
+
+we can see the inverter placed in the floorplan, if we zoom it.
+
+![69](https://github.com/chetp100/VSDSOC/assets/169384940/96fe2541-61d7-421b-94bf-997356fc7e39)
+
+
+
+
 
 
 
