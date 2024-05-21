@@ -344,6 +344,54 @@ set ::env(SYNTH_SIZING) 1
 run_synthesis
 
 ```
+<br>
+In Openlane directory, we need to create pre_sta.conf file.
+
+![VirtualBox_vsdworkshop_21_05_2024_22_49_45](https://github.com/chetp100/VSDSOC/assets/169384940/f3af1756-c704-491d-89ab-6f3538c62645)
+
+In picorv32a/src folder we need to add my_base.sdc file
+
+![72](https://github.com/chetp100/VSDSOC/assets/169384940/7fa156c2-5ba4-4f4b-9631-d0e63275c64e)
+
+now to run sta in Openlane directory we use command
+
+```
+sta pre_sta.conf
+
+```
+![VirtualBox_vsdworkshop_21_05_2024_22_57_52](https://github.com/chetp100/VSDSOC/assets/169384940/5457c8cd-a79d-42be-9ee3-e887e2a5788d)
+
+<br>
+
+![VirtualBox_vsdworkshop_21_05_2024_22_58_19](https://github.com/chetp100/VSDSOC/assets/169384940/6ad83a30-6446-40b8-90de-0e827bc20ef9)
+
+Here also the worst negative slack is -23.89
+
+For checking the connections to a net
+
+```
+report net -connenctions _10566_
+
+```
+
+replace the cell with higher drive strength using  command
+
+```
+
+replace_cell _13165_ sky130_fd_sc_hd__or3_4
+
+```
+
+timing is checked 
+
+```
+
+report_checks -fields {net cap slew input_pins} -digits 4
+
+```
+
+
+
 
 
 
