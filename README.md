@@ -1,5 +1,82 @@
 # VSD SoC design Program
 # Contents
+Table Of Contents
+1. Introduction to Open-Source EDA, OpenLANE, and Sky130 PDK
+a) Open-Source EDA Tools
+b) Electronic Design Automation (EDA): Software for designing electronic systems, especially integrated circuits (ICs).
+c) Open-source EDA tools: Provide affordable, adaptable, and collaborative environments for IC design.
+**OpenLANE**
+OpenLANE: An open-source ASIC (Application-Specific Integrated Circuit) design flow that integrates several EDA tools to convert RTL (Register Transfer Level) code to GDSII (layout format).
+Sky130 PDK: A 130nm technology node Process Design Kit developed by Google and SkyWater Technology, available for free to facilitate open-source IC design.
+Overview of Open-Source Digital ASIC Design Components
+RTL Design: Writing hardware descriptions using languages like Verilog or VHDL.
+Synthesis: Translating RTL code into a gate-level netlist.
+Floorplanning: Laying out the major functional blocks on the chip.
+Placement: Positioning the standard cells in the defined layout.
+Clock Tree Synthesis (CTS): Creating a clock distribution network.
+Routing: Connecting all the placed cells and blocks.
+Signoff: Performing final checks including timing analysis, DRC (Design Rule Check), and LVS (Layout vs. Schematic).
+Simplified RTL2GDS Flow
+RTL (Verilog): Start with your RTL design.
+Synthesis: Use tools like Yosys to convert RTL to a gate-level netlist.
+Floorplanning: Define the chip's layout.
+Placement: Place standard cells according to the floorplan.
+CTS: Design the clock distribution network.
+Routing: Connect all cells and blocks.
+DRC/LVS: Check for design rule compliance and logical correctness.
+GDSII: Generate the final layout file for fabrication.
+Detailed ASIC Design Flow Using OpenLANE
+Synthesis
+Tool: Yosys
+Goal: Convert RTL code into a gate-level netlist.
+Process: Load RTL, set constraints, and run synthesis to generate the netlist.
+2. Floorplanning and Placement
+Running Floorplan with OpenLANE
+Prepare Design: Ensure the synthesized netlist is ready.
+Initialize Floorplan: Execute the floorplanning command in OpenLANE.
+Set Constraints: Define the power grid, I/O pins, and blockages.
+Run Floorplan: Generate the initial layout using the floorplanning tool.
+Reviewing Floorplan Files and Viewing Floorplan
+Check Output Files: Review floorplan.def, floorplan.log, and floorplan.lef.
+View Layout: Use tools like Magic or KLayout to inspect the floorplan.
+Running Placement with OpenLANE
+Initialize Placement: Begin the placement step after floorplanning.
+Set Constraints: Define specific placement constraints if needed.
+Run Placement: Use the placement tool to position the standard cells.
+3. Design Library Cell with Magic Layout and Ngspice Characterization
+CMOS Inverter Simulation with Ngspice
+Create Schematic: Design the CMOS inverter.
+Simulate: Perform DC, AC, and transient analysis using Ngspice.
+Extracting Spice Netlist from Standard Cell Layout
+Layout in Magic: Draw the layout of the standard cell.
+Extract Netlist: Use Magic to generate the spice netlist from the layout.
+Characterizing the Inverter Using Sky130 Model Files
+Setup: Ensure Sky130 model files are available.
+Simulate: Use Ngspice to run simulations and extract performance metrics.
+Lab Challenge: Describing DRC Errors
+Identify Errors: Use Magic to find design rule violations.
+Describe Errors: Document and explain DRC errors as geometrical constructs.
+4. Pre-Layout Timing Analysis and Clock Tree Synthesis
+Converting Magic Layout to Standard Cell LEF
+Complete Layout: Ensure the layout is finished in Magic.
+Export LEF: Use Magic to convert the layout to a LEF file.
+Configuring Synthesis to Fix Slack and Include VSDINV
+Adjust Constraints: Modify synthesis settings to improve timing slack.
+Include VSDINV: Ensure the inverter cell is included in the synthesis process.
+Timing Analysis with OpenSTA
+Run OpenSTA: Load the design and perform static timing analysis to identify timing issues.
+Post-CTS Timing Analysis with OpenROAD
+Clock Tree Synthesis: Use TritonCTS to design the clock tree.
+Timing Analysis: Perform post-CTS timing analysis using OpenROAD.
+Clock Tree Synthesis with TritonCTS and Signal Integrity
+Design Clock Tree: Utilize TritonCTS for clock tree design.
+Verify Integrity: Check clock signal integrity and timing.
+5. Final Steps for RTL2GDS Using TritonRoute and OpenSTA
+Power Distribution Network and Routing
+Power Planning: Design the power distribution network.
+Routing with TritonRoute: Perform detailed routing to connect all components.
+Final Timing Analysis: Use OpenSTA for the final timing verification.
+Generate GDSII: Create the final GDSII file for chip fabrication.
 # Day-01
 # Inception of open-source EDA, OpenLANE and Sky130 PDK
 ##  How to talk to computers
