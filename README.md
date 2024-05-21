@@ -324,6 +324,34 @@ we can see the inverter placed in the floorplan, if we zoom it.
 
 ![69](https://github.com/chetp100/VSDSOC/assets/169384940/96fe2541-61d7-421b-94bf-997356fc7e39)
 
+## Timing Analaysis using openSTA
+
+Run Synthesis function need to be performed.
+
+```
+./flow.tcl -interactive
+<br>
+
+package require openlane 0.9
+<br>
+
+prep -design picorv32a
+<br>
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+<br>
+
+add_lefs -src $lefs
+<br>
+
+set ::env(SYNTH_SIZING) 1
+<br>
+
+run_synthesis
+
+```
+
+
 
 
 
